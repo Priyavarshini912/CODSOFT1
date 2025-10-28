@@ -1,0 +1,259 @@
+/* 🌈 General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #fafaff;
+  color: #333;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* 🌈 Navigation Bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffffcc;
+  backdrop-filter: blur(10px);
+  padding: 15px 40px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #6a67ce;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #6a67ce;
+}
+
+/* 🦋 Header */
+header {
+  height: 85vh;
+  background: linear-gradient(120deg, #a8edea, #fed6e3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #333;
+  padding: 20px;
+}
+
+header .intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+header .intro span {
+  color: #6a67ce;
+}
+
+header .intro p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background-color: #6a67ce;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #837ee5;
+  transform: scale(1.05);
+}
+
+/* 🌸 About Section */
+#about {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#about .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  background: #ffffffaa;
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+#about img {
+  width: 200px;
+  border-radius: 50%;
+  border: 4px solid #6a67ce;
+}
+
+#about .text {
+  max-width: 600px;
+}
+
+#about h2 {
+  color: #6a67ce;
+  margin-bottom: 15px;
+}
+
+/* 💡 Skills */
+#skills {
+  background: #f4f3ff;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+#skills h2 {
+  color: #6a67ce;
+  margin-bottom: 25px;
+}
+
+.skills-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skill {
+  background: #6a67ce;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  box-shadow: 0 3px 10px rgba(106, 103, 206, 0.3);
+  transition: all 0.3s ease;
+}
+
+.skill:hover {
+  background: #837ee5;
+  transform: translateY(-5px);
+}
+
+/* 🪴 Projects */
+#projects {
+  background: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+#projects h2 {
+  color: #6a67ce;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.project-card {
+  background: #f9f9ff;
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  margin-top: 15px;
+  color: #6a67ce;
+}
+
+.project-card p {
+  padding: 0 15px 20px;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* 📄 Resume */
+#resume {
+  background: #f4f3ff;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+#resume h2 {
+  color: #6a67ce;
+  margin-bottom: 15px;
+}
+
+/* 💌 Contact */
+#contact {
+  text-align: center;
+  padding: 70px 20px;
+}
+
+#contact h2 {
+  color: #6a67ce;
+  margin-bottom: 20px;
+}
+
+#contact a {
+  color: #6a67ce;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* 🌼 Footer */
+footer {
+  background: #6a67ce;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+/* 🌿 Responsive */
+@media (max-width: 768px) {
+  #about .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .projects-grid {
+    flex-direction: column;
+  }
+}
